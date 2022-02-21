@@ -1,0 +1,19 @@
+#container {
+  position: relative;
+  top: 30px;
+  outline: 2px solid #000;
+  font-size: 0;
+  margin: auto;
+  height: 760px;
+  width: 760px;
+  padding: 0;
+  border: none;
+}
+
+.square {
+    border: 1px solid gray;
+    min-width: 10px;
+    min-height: 20px;
+    display: inline-block;
+  }
+  
