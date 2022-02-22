@@ -1,19 +1,52 @@
-#container {
-  position: relative;
-  top: 30px;
-  outline: 2px solid #000;
-  font-size: 0;
-  margin: auto;
-  height: 760px;
-  width: 760px;
-  padding: 0;
-  border: none;
+body {
+  background-color: rgba(253, 255, 148, 0.795);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.square {
-    border: 1px solid gray;
-    min-width: 10px;
-    min-height: 20px;
-    display: inline-block;
-  }
-  
+.game-pad {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(224, 22, 22, 0.945);  
+  padding: 5px 30px 20px 30px;
+  border-radius: 25px;
+  margin: 0 auto;
+  box-shadow: 10px 10px rgb(119, 18, 18);
+}
+
+.grid-screen {
+  display: grid;
+  grid-template-columns: repeat(50, 1fr);
+  grid-template-rows: repeat(50, 1fr);
+  width: 512px;
+  height: 512px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: rgba(139, 194, 184, 0.952);
+  border: 0px solid black;
+}
+
+button {
+  background-color: rgb(139, 194, 184, .952);;
+  font-size: medium;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid black;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  width: 75px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
