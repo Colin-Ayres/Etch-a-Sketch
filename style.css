@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(253, 255, 148, 0.795);
+  background-color: rgba(248, 250, 109, 0.795);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -38,10 +38,9 @@ button {
   border-radius: 5px;
   color: black;
   border: 1px solid black;
-  margin-top: -10px;
-  margin-bottom: 10px;
   width: 75px;
   font-family: 'Courier New', Courier, monospace;
+  margin-left: 80px;
 }
 
 h1 {
@@ -49,4 +48,39 @@ h1 {
   color: rgb(0, 0, 0);
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  background: rgb(0, 0, 0);
+  border-radius: 25px;
+  height: 5px;
+  color: aquamarine;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 18px;
+  background-color: rgb(250, 230, 53);
+  overflow: visible;
+  cursor: pointer;
+}
+
+.options {
+  display: inline-flex;
+  align-items: center;
+  margin-top: -25px;
 }
